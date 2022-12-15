@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wilson Sporting Goods</title>
+  <link rel="icon" href="images/Wilson_logo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Home.css">
+  <link rel="stylesheet" href="css/Footer.css">
+  <link rel="stylesheet" href="css/login.css">
+
+
+  <style>
+    body {
+      font-family: Garamond;
+      color: lightblue;
+    }
+
+    #first {
+      /* width: 46%; */
+      margin: 25px;
+      /* float: right; */
+      border: 4px solid #000;
+      border-radius: 10px;
+      padding: 6px;
+      background-color: #28292d;
+
+
+    }
+
+    #second {
+      /* width: 46%; */
+      margin: 25px;
+      /* float: left; */
+      border: 4px solid #000;
+      border-radius: 10px;
+      padding: 6px;
+      background-color: #28292d;
+    }
+
+    #table table {
+
+      border: 0ch;
+      border-radius: 10px;
+      width: 100%;
+      padding: 6px;
+
+    }
+
+    select {
+      margin-left: 155px;
+      margin-top: 30px;
+      width: 35%;
+      background-color: #252525;
+      color: #fff;
+      font-weight: 600;
+      border: 2px solid #000;
+      border-radius: 4px;
+    }
+
+    #img {
+      width: 50%;
+      height: 300px;
+      margin-top: 20px;
+      border: 2px solid #000;
+
+    }
+
+    img {
+      width: 100%;
+      height: 295px;
+    }
+
+    table {
+      margin-top: 10px;
+      /* margin-bottom: 20px; */
+    }
+
+    table td {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg  navbar sticky-top">
+    <div class="container-fluid">
+      <button style="color:rgb(255, 55, 55) ;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="headerlink">
+        <h3 class="justify-content-start" style="font-weight: bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <b style="color:#fff ;">WILSON</b>
+          <b style="color: rgb(255, 55, 55) ;">SPORTING </b><b style="color: rgb(255, 55, 55) ;"><center>GOODS</center></b>
+        </h3>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <nav class="site-navigation navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:120px ;">
+          <ul class="nav align-content-">
+            <li><a href="index.html" class="anchor">Home</a></li>
+            <li><a href="index.html#brands" class="anchor">Brands</a></li>
+            <li><a href="Compare.html" class="anchor active">Compare Products</a></li>
+            <li><a href="Blog.html" class="anchor">Blogs</a></li>
+            <li><a href="About-Us.html" class="anchor">About Us</a></li>
+            <li><a href="contact.html" class="anchor">Contact</a></li>
+            <li><a href="Feedback.html" class="anchor">Feedback</a></li>
+          </ul>
+        </nav>
+        <form class="d-flex">
+          <ul>
+            <li> <a data-bs-toggle="modal" data-bs-target="#ID_SignUpModal" class="anchor"><span
+                  class="glyphicon glyphicon-user"></span>
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#loginModal" class="anchor"><span
+                  class="glyphicon glyphicon-user"></span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+<div class="container d-flex">
+    <!-- Section One -->
+    <div class="row">
+  <div class="col-lg-12">
+        <br><br>
+        <center>
+          <h1><b style="color:#fff ;">Compare </b><b
+              style="color:rgb(255, 55, 55) ; border-bottom: 4px solid #fff;">Products</b></h1>
+        </center>
+        <br>
+  </div>
+  <div class="col-lg-6">
+    <div id="first">
+
+      <div id="select">
+        <select id="no1" onchange="product()">
+          <option style="background-color:  #28292d;">Select Product</option>
+          <option value="shoes" style="background-color:  #28292d;">Sport Shoes</option>
+          <option value="cricketbat" style="background-color:  #28292d;">Cricket Bat</option>
+          <option value="football" style="background-color:  #28292d;">Football</option>
+          <option value="badminton" style="background-color:  #28292d;">Badminton</option>
+          <option value="golfkits" style="background-color:  #28292d;">Golf Kits</option>
+        </select>
+      </div>
+
+      <center>
+        <div id="img">
+          <img src="images/Screenshot 2022-11-02 221752.png" id="i1"
+            style="border: 2px solid #252525; border-radius: 6px;">
+        </div>
+      </center>
+
+
+
+
+      <div id="table">
+        <table>
+          <tr>
+            <td>Price</td>
+            <td id="price1"></td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td id="dur1"></td>
+          </tr>
+          <tr>
+            <td>Warranty</td>
+            <td id="war1"></td>
+          </tr>
+          <tr>
+            <td>Customer Ratings</td>
+            <td id="cr1"></td>
+          </tr>
+          <tr>
+            <td>Brand</td>
+            <td id="br1"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div id="second">
+
+      <div id="select">
+        <select id="no2" onchange="product2()">
+          <option style="background-color:  #28292d; color: #fff">Select Product</option>
+          <option value="shoes2" style="background-color:  #28292d;">Sport Shoes</option>
+          <option value="cricketbat2" style="background-color:  #28292d;">Cricket Bat</option>
+          <option value="football2" style="background-color:  #28292d;">Football</option>
+          <option value="badminton2" style="background-color:  #28292d;">Badminton</option>
+          <option value="" style="background-color:  #28292d;">Golf Kits</option>
+        </select>
+      </div>
+
+      <center>
+        <div id="img">
+          <img src="images/Screenshot 2022-11-02 221752.png" id="i2"
+            style="border: 2px solid #252525; border-radius: 6px;">
+        </div>
+      </center>
+
+
+
+
+      <div id="table">
+        <table>
+          <tr>
+            <td>Price</td>
+            <td id="price2"></td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td id="dur2"></td>
+          </tr>
+          <tr>
+            <td>Warranty</td>
+            <td id="war2"></td>
+          </tr>
+          <tr>
+            <td>Customer Ratings</td>
+            <td id="cr2"></td>
+          </tr>
+          <tr>
+            <td>Brand</td>
+            <td id="br2"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+
+   
+
+ 
+  </div>
+  <br><br>
+
+
+  <footer class="footer">
+    <div class="footer__addr">
+      <a href="index.html"><h1 class="footer__logo" ><b style="color:#fff ;">WILSON</b><b style="color:rgb(255, 55, 55)  ;"> SPORTING GOODS</b></h1></a>
+          
+      <a href="contact.html"><h2 style="color:lightblue ;" class="nav__title">Contact</h2></a>
+      
+      <address>
+        <p class="footerlinks">5534 Somewhere In. The World 0303-2504648</p><br>
+            
+        <a class="footer__btn nav__title" href="https://mail.google.com/"style="color:lightblue;">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title"style="color:lightblue ;">Media</h2>
+  
+        <ul class="nav__ul footerlinks">
+          <li>
+            <a href="#">Online</a>
+          </li>
+  
+          <li>
+            <a href="#">Print</a>
+          </li>
+              
+          <li>
+            <a href="#">Alternative Ads</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title"style="color:lightblue ;">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra  footerlinks">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+          
+          <li>
+            <a href="#">Automation</a>
+          </li>
+          
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+          
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title"style="color:lightblue ;">Quick Links</h2>
+        
+        <ul class="nav__ul  footerlinks">
+          <li>
+            <a href="index.html" style="color: #fff;">Home</a>
+          </li>
+          
+          <li>
+            <a href="contact.html" style="color: #fff;">Contact</a>
+          </li>
+          
+          <li>
+            <a href="Feedback.html" style="color: #fff;">Feedback</a>
+          </li>
+  
+          <li>
+            <a href="Blog.html" style="color: #fff;">Blogs</a>
+          </li>
+  
+          <li>
+            <a href="About-Us.html" style="color: #fff;">About Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p class="footerlinks">&copy; 2022 eProject. All rights reserved.</p>
+      
+      <div class="legal__links">
+        <span class="footerlinks">Made with <span class="heart">♥</span> Unity & Teamwork</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="box">
+        <div class="Form">
+
+          <div class="form">
+            <button type="button" class="btn-close bg-light" id="staticBackdropLabel" data-bs-dismiss="modal"
+              aria-label="Close" style="position:absolute ; top: 4px;right: 4px;"></button>
+            <form method="get" action="index.html">
+              <fieldset>
+                <br>
+                <h1><b style="color: #fff"> LOG</b><b style="color:rgb(255, 55, 55);">IN</b></h1><br>
+                <input type="email" placeholder="Enter your E-mail" required class="qw" id="exampleInputEmail1"><br>
+                <input type="password" placeholder="Enter your Password" required class="qw"
+                  id="exampleInputPassword1">
+                <a href="https://support.google.com/" target="_blank">Forget Password? </a><br><br>
+                <div>
+                  <center>
+                    <div><button type="submit" class="button" onclick="btnlogin()"> LOGIN</button></div>
+                  </center>
+                </div>
+                <br>
+                <p class="text">Don't have an account?<a data-bs-toggle="modal"
+                    data-bs-target="#ID_SignUpModal">Create Account</a><br>
+                  <center><a href="index.html" target="_self" class="o">Continue without Log-In</a></center>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ID_SignUpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="box">
+        <div class="Form">
+          <div class="form">
+            <button type="button" class="btn-close bg-light" id="staticBackdropLabel" data-bs-dismiss="modal"
+              aria-label="Close" style="position:absolute ; top: 4px;right: 4px;"></button>
+            <form method="close" action="#staticBackdroplabel">
+              <fieldset>
+                <br>
+                <h1><b style="color:rgb(255, 55, 55) ;">SIGN</b><b style="color: #fff;"> UP</b></h1><br>
+                <input type="email" placeholder="Enter your E-mail" name="" required class="qw" id="ID_userSignUP"><br>
+                <input type="password" placeholder="Enter your Password" name="" required class="qw"
+                  id="ID_userPaswordSignUP">
+                <br><br>
+                <div>
+                  <center>
+                    <div><button type="submit" class="button" id="BtnSignUp">SIGN UP</button></div>
+                  </center>
+                </div><br>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/login.js"></script>
+<script src="js/alert.js"></script> 
+<script type="text/javascript"></script>
+
+<script>
+  function product() {
+
+    var p1 = document.getElementById("no1").value;
+    var p2 = document.getElementById("no2").value;
+
+    if (p1 == p2) {
+      alert("You Cannot Compare Same Products!! Choose Different Products. Thanks");
+    }
+    else if (p1 == "shoes") {
+      document.getElementById("i1").src = "https://m.media-amazon.com/images/I/712dY-JtL4L._UX500_.jpg";
+      document.getElementById("price1").innerHTML = "Rs: 2,999/-";
+      document.getElementById("dur1").innerHTML = "Excellent";
+      document.getElementById("war1").innerHTML = "2 Years";
+      document.getElementById("cr1").innerHTML = "Excellent";
+      document.getElementById("br1").innerHTML = "Adidas";
+
+    }
+    else if (p1 == "cricketbat") {
+      document.getElementById("i1").src = "https://m.media-amazon.com/images/I/61jxyyTO9oL._SL1500_.jpg";
+      document.getElementById("price1").innerHTML = "Rs: 4,499/-";
+      document.getElementById("dur1").innerHTML = "Excellent";
+      document.getElementById("war1").innerHTML = "10 Months";
+      document.getElementById("cr1").innerHTML = "Best";
+      document.getElementById("br1").innerHTML = "MRF";
+    }
+
+    else if (p1 == "football") {
+      document.getElementById("i1").src = "https://i2-prod.manchestereveningnews.co.uk/sport/football/article24985459.ece/ALTERNATES/s615/0_GettyImages-1413133364.jpg";
+      document.getElementById("price1").innerHTML = "Rs: 1,099/-";
+      document.getElementById("dur1").innerHTML = "Fair";
+      document.getElementById("war1").innerHTML = "1 Year";
+      document.getElementById("cr1").innerHTML = "Good";
+      document.getElementById("br1").innerHTML = "Nike";
+    }
+
+    else if (p1 == "badminton") {
+      document.getElementById("i1").src = "https://images-eu.ssl-images-amazon.com/images/I/71Jq43IodUL._AC._SR360,460.jpg";
+      document.getElementById("price1").innerHTML = "Rs: 3,499/-";
+      document.getElementById("dur1").innerHTML = "Good";
+      document.getElementById("war1").innerHTML = "2 Years";
+      document.getElementById("cr1").innerHTML = "Excellent";
+      document.getElementById("br1").innerHTML = "Feroc";
+    }
+
+    else if (p1 == "golfkits") {
+      document.getElementById("i1").src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golf-clubs-1614721390.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*";
+      document.getElementById("price1").innerHTML = "Rs: 49,999/-";
+      document.getElementById("dur1").innerHTML = "Excellent";
+      document.getElementById("war1").innerHTML = "3 Years";
+      document.getElementById("cr1").innerHTML = "Best";
+      document.getElementById("br1").innerHTML = "Callaway";
+    }
+
+  }
+
+
+  function product2() {
+
+    var p1 = document.getElementById("no1").value;
+    var p2 = document.getElementById("no2").value;
+
+    if (p1 == p2) {
+      alert("You Cannot Compare Same Products!! Choose Different Products. Thanks");
+    }
+    else if (p2 == "shoes2") {
+      document.getElementById("i2").src = "https://static.nike.com/a/images/c_limit,w_400,f_auto/t_product_v1/01fa2267-5cd3-47e0-8280-c117221b7c83/image.jpg";
+      document.getElementById("price2").innerHTML = "Rs: 1,600/-";
+      document.getElementById("dur2").innerHTML = "Fair";
+      document.getElementById("war2").innerHTML = "1 Year";
+      document.getElementById("cr2").innerHTML = "Good";
+      document.getElementById("br2").innerHTML = "Nike";
+    }
+    else if (p2 == "cricketbat2") {
+      document.getElementById("i2").src = "http://cdn.shopify.com/s/files/1/2193/7211/articles/english-willow-cricket-bat-men.jpg?v=1585670428";
+      document.getElementById("price2").innerHTML = "Rs: 5,999/-";
+      document.getElementById("dur2").innerHTML = "Excellent";
+      document.getElementById("war2").innerHTML = "5 Years";
+      document.getElementById("cr2").innerHTML = "Excellent";
+      document.getElementById("br2").innerHTML = "English Willow";
+    }
+    else if (p2 == "football2") {
+      document.getElementById("i2").src = "https://huffpost-focus.sirius.press/2022/09/25/0/0/4999/3333/320/213/60/0/52a2666_1664134705098-gettyimages-1242703939.jpg";
+      document.getElementById("price2").innerHTML = "Rs: 2,200/-";
+      document.getElementById("dur2").innerHTML = "Excellent";
+      document.getElementById("war2").innerHTML = "2 Years";
+      document.getElementById("cr2").innerHTML = "Best";
+      document.getElementById("br2").innerHTML = "Adidas";
+    }
+    else if (p2 == "badminton2") {
+      document.getElementById("i2").src = "https://rukminim1.flixcart.com/image/312/312/l09w8sw0/kit/t/o/3/fine-badminton-combo-set-with-2-rackets-3-feather-shuttles-and-original-imagc3zqjjyuhysa.jpeg?q=70";
+      document.getElementById("price2").innerHTML = "Rs: 2,300/-";
+      document.getElementById("dur2").innerHTML = "Good";
+      document.getElementById("war2").innerHTML = "8 Months";
+      document.getElementById("cr2").innerHTML = "Fair";
+      document.getElementById("br2").innerHTML = "Hipkoo";
+    }
+    else if (p2 == "") {
+      document.getElementById("i2").src = "https://i.pinimg.com/originals/7b/8b/5f/7b8b5fe3bf717aae756c7a9db451565a.png";
+      document.getElementById("price2").innerHTML = "Rs: 60,000/-";
+      document.getElementById("dur2").innerHTML = "Excellent";
+      document.getElementById("war2").innerHTML = "5 Years";
+      document.getElementById("cr2").innerHTML = "Excellent";
+      document.getElementById("br2").innerHTML = "Wilson";
+    }
+
+  }
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

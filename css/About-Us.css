@@ -1,0 +1,106 @@
+
+   /* .container{
+     width: 100%;
+     flex-direction: row;
+     justify-content: center;
+     
+   
+   }
+   .box{
+   float: left;
+ margin: 20px;
+ flex-wrap: wrap;
+   } */
+   img{
+     width: 36vh;
+     border-radius: 14px;
+   }
+
+
+   .image{
+   position: relative;
+   /* width: 400px; */
+ }
+ .image__img{
+   display: block;
+   width: 100%;
+ }
+ .image__overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+   background: rgba(0, 0, 0, 0.6);
+   color: lightblue;
+   display: flex;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: opacity 0.25s;
+ }
+ .image__overlay--blur{
+   backdrop-filter: blur(5px) ;
+ }
+ .image__overlay > *{
+   transform: translateY(20px);
+   transition: transform 0.25s;
+
+ }
+ .image__overlay:hover{
+   opacity: 1;
+ }
+ .image__overlay:hover > *{
+   transform: translateY(0);
+ }
+
+ .image__title{
+   font-size: 35px;
+   font-weight: bold;
+
+ }
+ .image__title:hover{
+   font-size: 36px;
+   font-weight: bolder;
+
+ }
+ .card{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 14px;
+ }
+
+ p{
+  color: lightblue;
+ }
+
+ .pic_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+
+ @media screen and (max-width:1000px) {
+  .pic_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+  
+ }
+ .Cl_heading{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+ }
+ .Cl_heading .Cl_headingOur{
+  color: #fff;
+ }
+ .Cl_headingS{
+  color: rgb(255, 55, 55); border-bottom: 3px solid #fff;
+ }

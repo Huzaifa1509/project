@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.anchor {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 20px;
+    border: 0ch;
+    transition: .8s;
+}
+.active{
+    color: #fff;
+    font-size: 23px;
+    border-bottom:2px solid rgb(255, 55, 55);
+    transition: 2px; 
+}
+    /* background: #ff3737;
+
+  color: white;
+  padding: 7px 17px;
+  border-radius: 8px;
+} */
+a{
+  text-decoration: none;
+  color: lightseagreen;
+
+ 
+}
+a:hover{
+
+  color: #fff;
+  border-bottom:2px solid rgb(255, 55, 55);
+}
+.headings{
+  margin-top: 80px;
+}
+#paragraph{
+  color:#ccc;
+  margin-right: 30px; 
+  font-size: 16px; 
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+}
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+.navbar{
+  background-color: #0f1116;
+  color: lightblue;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(255 55 55) !important;
+  border-color: rgb(227 49 49) !important;
+}
+.navbar-light .navbar-toggler-icon {
+background-image: none !important;
+}
+.navbar-toggler-icon::before {
+font-family: FontAwesome;
+content: "☰"; /* fa-bars, fa-navicon */
+}
+@media screen and (max-width:1090px) {
+  .divcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+}
+
+body{
+
+  font-family:Garamond;
+  background-image: url('../images/114201-pattern-black.jpg');
+
+}
+.nav-active{
+  background: #ff3737;
+  color: white;
+  padding: 7px 17px;
+  border-radius: 8px;
+}
+
+
+/* .active{
+  background: #ff3737;
+  color: white;
+  padding: 7px 17px;
+  border-radius: 8px;
+} */
